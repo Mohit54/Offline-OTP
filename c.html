@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LoginDB</title>
+    </head>
+    <body>
+
+        <?php
+        $con=  mysqli_connect("localhost", "root", "", "classicmodels");
+<!-- detail is the database in MySqli Database -->
+        if(!$con)
+       {
+           die('not connected');
+       }
+            $con=  mysqli_query($con, "select * from accounts");
+<!-- signup is the table in the detail_Database -->
+       ?>
+        <div>
+            <td>Login Page Database</td>
+         <table border="1">
+            <th>  Name</th>
+                    <th> Name</th>
+                    <th>Name</th>
+                     
+
+            </tr>
+
+        <?php
+
+             while($row=  mysqli_fetch_array($con))
+<!-- Fetch each row from accounts Table  -->
+             {
+                 ?>
+            <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['Name']; ?></td>
+                <td><?php echo $row['amount']; ?></td>
+              
+            </tr>
+        <?php
+             }
+             ?>
+             </table>
+            </div>
+    </body>
+</html>

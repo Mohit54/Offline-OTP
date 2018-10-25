@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://daplie.github.io/browser-authenticator/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Authenticator - Daplie, Inc</title>
+   <img src="logo_MyBank_positive.png" alt="Mountain View" style="width:600px;height:250px;">
+
+
+ 
+    <!--meta name="viewport" content="width=device-width, user-scalable=no" /-->
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; https://camo.githubusercontent.com/ https://chart.googleapis.com/ data:; child-src &#39;self&#39;; object-src &#39;none&#39;">
+    <link rel="stylesheet" type="text/css" href="./Authenticator - Daplie, Inc_files/bootstrap-v3.3.5.min.css">
+    <link rel="stylesheet" type="text/css" href="./Authenticator - Daplie, Inc_files/style.css">
+  </head>
+ 
+
+
+
+
+
+
+
+
+
+
+ <body class="fade in">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 left">
+      <h1> To Generate OTP Scan Barcode </h1>   <h1 class="authenticator">Authenticator Test</h1>
+          <img alt="qrcode" class="js-qrcode qrcode" width="166" height="166" src="./Authenticator - Daplie, Inc_files/chart">
+          <div class="scan">
+            Scan with <a href="https://www.authy.com/personal/mobile/" target="_blank">Authy App</a>
+          </div>
+          <div class="verify">
+            <label class="token-label">Enter Verification Token:</label>
+            <br>
+            <input class="js-token token-input" type="text" placeholder="i.e.  123 456">
+            <button class="js-verify btn">Verify</button>
+          </div>
+        </div>
+
+        <div class="col-xs-6 right">
+                           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 bottom">
+          <form class="form-horizontal">
+            <h1 class="console"> Console </h1>
+            <hr>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Issuer:</label>
+              <div class="col-sm-9">
+                <input type="text" class="js-company-name issuer-input wide" placeholder="Company Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Account:</label>
+              <div class="col-sm-9">
+                <input type="text" class="js-user-account issuer-input wide" placeholder="User Account">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Key:</label>
+              <div class="col-sm-9">
+                <input type="text" class="js-key base-key-input wide" placeholder="hxdm vjec jjws rb3h wizr 4ifu gftm xboz">
+              </div>
+            </div>
+
+ 
+
+
+
+
+
+
+
+
+
+           <!-- TODO add options to interface -->
+            <input type="hidden" class="js-totp-algo" value="SHA1">
+            <input type="hidden" class="js-totp-digits" value="6">
+            <input type="hidden" class="js-totp-period" value="30">
+
+            <div class="form-group">
+              <div class="col-sm-offset-6 col-xs-6">
+                <button type="button" class="btn btn-default js-generate regenerate">Regenerate</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">URI:</label>
+              <div class="col-sm-9">
+                <p class="js-otpauth">otpauth://totp/ACME%20Co:john@example.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&amp;issuer=ACME%20Co&amp;algorithm=SHA1&amp;digits=6&amp;period=30</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    <!-- github banner -->
+    <a href="https://github.com/Daplie/browser-authenticator"></a>
+
+    <!-- extremely lightweight shim for hex conversion -->
+    <script src="./Authenticator - Daplie, Inc_files/index.js.download"></script>
+    <script src="./Authenticator - Daplie, Inc_files/unibabel.hex.js.download"></script>
+
+    <!-- base32 conversion (and binary string for forge) (works standalone from the above) -->
+    <script src="./Authenticator - Daplie, Inc_files/unibabel.base32.js.download"></script>
+
+    <!-- forge.* -->
+    <script src="./Authenticator - Daplie, Inc_files/forge.min.js.download"></script>
+
+    <!-- botp.totp -->
+    <script src="./Authenticator - Daplie, Inc_files/sha1-hmac.js.download"></script>
+    <script src="./Authenticator - Daplie, Inc_files/index.js(1).download"></script>
+
+    <!-- Authenticator -->
+  
+
+
+
+
+
+
+
+
+
+  <script src="./Authenticator - Daplie, Inc_files/authenticator.js.download"></script>
+    <script src="./Authenticator - Daplie, Inc_files/demo.js.download"></script>
+  
+
+</body></html>
